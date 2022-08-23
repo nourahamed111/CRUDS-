@@ -22,14 +22,15 @@ input{
    outline: none; 
    border: none;
    background: #111;
-   margin: 4px 0px;
+   margin: 8px 0px;
    border-radius: 4px;
-   padding: 4px;
+   padding: 8px;
    color: #fff;
 }
  input:focus {
     background: #000;
     transform: scale(1.1);
+    margin:8px;
  }
  .price input{
     width: 20%;
@@ -73,4 +74,5 @@ input{
   }
   th ,td {
     padding: 5px;
+    color: #fff;
   }
