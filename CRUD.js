@@ -51,8 +51,9 @@ submit.onclick = function(){
   localStorage.setItem('product' , JSON.stringify(datapro)   )
   //console.log (datapro)
   
-  //showData();
   clearData ();
+  showData();
+
 }
 
 
@@ -71,12 +72,12 @@ function clearData (){
 
 // read 
 function showData(){ 
-  let table = '';
-       for(let i = 0; i < datapro.lenght; i++)
+  let table = document.getElementById('tbody');
+       for(let i = 0; i<datapro.length; i++)
        {
-        table = datapro;
-        console.log(table);
-        /*table +=`
+        //table = datapro;
+        //console.log(datapro[i]);
+        table.innerHTML +=`
          <tr>
             <td>${i}</td>
             <td>${datapro[i].title}</td> 
@@ -89,14 +90,35 @@ function showData(){
             <td><button id="update">update</button></td>
             <td><button id="delete">delete</button></td>
            </tr>
-           `;*/
+           `;
          }
-  //document.getElementById("tbody").innerHTML = table;
-}
-  //showData()
+         //document.getElementById("tbody").innerHTML = table;
+          //delete all
+         //let btnDelete = document.getElementById('deleteAll')
+        // if (datapro.length >0){
+         //   btnDelete.innerHTML = `<button onClick="deleteAll()"> Delete All</button>`;
+        // } else{
+         //  btnDelete.innerHTML = '';
+        // };
+ }
+   showData();
 
 // delete
+/*function deleteData(i){
+   console.log(i)
+   datapro.splice(i,1);
+   localStorage.product = JSON.stringify(datapro);
+   showData();
+}
+
+
+//delete aall
+function deleteAll() {
+ localStorage.clear();
+ datapro.splice(0);
+ showData();
+} */
 // count
 // update
 // search
-// clean data
+// clean data 
