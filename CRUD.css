@@ -6,6 +6,8 @@ body{
     background: var(--third-color);
     color: var(--fourth-color);
     font-family: system-ui;
+    margin: 30px;
+    padding: 30px;
 }
 .crud{
     width: 80%;
@@ -120,3 +122,45 @@ input{
    width: 30px;
    cursor: pointer;
   }
+
+
+  header{
+   position: relative;
+   width: 95%;
+   z-index: 100;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0px;
+   color:var(--fifth-color);
+}
+header .logo{
+ font-size:  30px;
+ text-transform: uppercase;
+ text-decoration: none;
+
+}
+header ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+   
+
+}
+header ul li {
+    margin-right: 30px;
+
+
+
+}
+header ul li a{
+   padding: 6px 15px;
+   text-decoration: none;
+   border-radius: 20px;
+}
+
+header ul li a:hover , .active{
+   background: var(--fifth-color);
+   color: var(--fourth-color);
+}

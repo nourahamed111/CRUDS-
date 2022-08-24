@@ -1,4 +1,51 @@
 
+//landing page 
+let stars = document.getElementById('stars');
+let moon = document.getElementById('moon');
+let mountains3= document.getElementById('mountains3');
+let mountains4 = document.getElementById('mountains4');
+let moonp = document.querySelector('.moonp');
+let river = document.getElementById('river');
+let boat = document.getElementById('boat');
+
+window.onscroll = function(){
+  let value = scrollY;
+  //console .log(value);
+  stars.style.left = value + 'px';
+  moon.style.top = value*4 + 'px';
+  mountains3.style.top= value*2 + 'px';
+  mountains4.style.top= value*1.5 + 'px';
+  river.style.top = value + 'px';
+  boat.style.top = value + 'px';
+  boat.style.left = value *2.5+ 'px';
+  moonp.style.fontSize = value + 'px';
+   if(scrollY >= 82){
+    moonp.style.fontSize = 67 + 'px';
+    moonp.style.position =  'fixed';
+    if (scrollY >= 451) {
+      moonp .style.display ='none';
+    }else{
+      moonp .style.display ='block';
+    } 
+    if (scrollY >= 127){
+     document.querySelector('.main').style.background = 'linear-gradient(#ecd6e5,#6b71da)';
+    }else{
+      document.querySelector(".main").style.background = 'linear-gradient(#200016,#10001f )';
+    }
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+// Cruds page
 let title = document.getElementById('title');
 let price = document.getElementById('price');
 let taxes = document.getElementById('taxes');
