@@ -3,8 +3,8 @@
     padding: 0;
 }
 body{
-    background: #222;
-    color: #fff;
+    background: var(--third-color);
+    color: var(--fourth-color);
     font-family: system-ui;
 }
 .crud{
@@ -21,14 +21,14 @@ input{
    height: 30px;
    outline: none; 
    border: none;
-   background: #111;
+   background: var(--second-color);
    margin: 8px 0px;
    border-radius: 4px;
    padding: 8px;
-   color: #fff;
+   color: var(--fourth-color);
 }
  input:focus {
-    background: #000;
+    background: var(--first-color);
     transform: scale(1.1);
     margin:8px;
  }
@@ -36,7 +36,7 @@ input{
     width: 20%;
  }
  #total{
-    background: #a00d02;
+    background: #be423a;
     padding:4px 2px;
     border-radius: 4px;
  }
@@ -48,13 +48,13 @@ input{
     height: 30px;
     border: none;
     cursor: pointer;
-    background: #390053;
-    color: #fff;
+    background: var(--fifth-color);
+    color: var(--fourth-color);
     border-radius: 20px;
     transition: 0.5s;
  }
  button:hover{
-    background: #51025f;
+    background: var(--six-color);
     letter-spacing: 1px;
  }
  .btnSearch{
@@ -74,9 +74,49 @@ input{
   }
   th ,td {
     padding: 5px;
-    color: #fff;
+    color: var(--fourth-color);
   }
   #deleteAll {
    margin: 20px;
    
+  }
+
+  
+  :root{
+   --third-color:  #222;
+   --first-color: #000;
+   --second-color : #111 ;
+   --fourth-color : #fff ;
+   --fifth-color :  #390053; 
+   --six-color : #51025f; 
+
+  }
+  
+  .light-mode{
+
+   
+   --third-color:  #fff;
+   --first-color: #c5d4e4;
+   --second-color : rgb(223, 230, 239) ;
+   --fourth-color : #000 ;
+   --fifth-color :  #95bfef; 
+   --six-color : #be423a; 
+
+       
+
+
+  }
+  
+  
+  
+  
+  
+  .mood {
+   align-items: center;
+   text-align: center;
+   color: #a00d02;
+  }
+  #icon{
+   width: 30px;
+   cursor: pointer;
   }

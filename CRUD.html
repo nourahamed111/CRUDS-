@@ -11,6 +11,10 @@
 </head>
 <body>
   <div class="crud">
+    <div class="mood">
+    <img src="./img/sun.png" id="icon">
+    <p id="iconp">"Press here to Light mode"</p>
+   </div>
     <div class="head">
         <h2>Crud</h2>
         <p>product management system</p>
@@ -31,10 +35,10 @@
     </div>
     <div class="outputs">
         <div class="searchBlock">
-        <input id="search" placeholder="search">
+        <input  onkeyup="searchData(this.value)" id="search" placeholder="search">
         <div class="btnSearch">
-            <button class="searchTitle">Search By Title</button>
-            <button class="searchCategory">Search By Category</button>
+            <button  onclick="getSearchMood (this.id)" id="searchTitle">Search By Title</button>
+            <button onclick="getSearchMood (this.id)"  id="searchCategory">Search By Category</button>
         </div>
         </div>
         <div id="deleteAll">
