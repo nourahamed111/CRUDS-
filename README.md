@@ -1,2 +1,2 @@
 # CRUDS-
-CRUDS using html , css and javascript
+CRUDS operations using html , css and javascript with dark mode 
