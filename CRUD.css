@@ -8,6 +8,7 @@ body{
     font-family: system-ui;
     margin: 30px;
     padding: 30px;
+    background-image: url(./img/stars1.webp);
 }
 .crud{
     width: 80%;
@@ -122,6 +123,7 @@ input{
    width: 30px;
    cursor: pointer;
   }
+
 
 
   header{

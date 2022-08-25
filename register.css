@@ -52,22 +52,25 @@ a{
       height: 100vh;
       background-position: center;
       background-size: cover;
-      background-image: linear-gradient(rgba(0,0,0,0.7), #813e74),url(./img/background.png);
+      background-image: url(./img/background.png);
       display: flex;
       align-items: center;
       justify-content: center;
    }
    form{
+      background-image: url(./img/background.png);
       width:90%;
       max-width: 600px;
-
+      margin-top: 150px;
+      margin-left: 80px;
+      
    }
    .input-group{
       margin-bottom: 30px;
       position: relative;
    }
    input, textarea {
-      width:100%;
+      width:60%;
       padding: 10px;
       outline: 0;
       border: 1px solid #fff;
@@ -93,9 +96,13 @@ a{
       outline: none;
       background: transparent;
       border:1px solid #fff;
-      width:100%;
+      width:30%;
       cursor: pointer;
       margin: 10px;
+   }
+   button:hover{
+      background-color: #fff;
+      color: #813e74;
    }
    .login{
       background: #813e74;
